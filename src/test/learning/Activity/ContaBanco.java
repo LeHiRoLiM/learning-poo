@@ -42,9 +42,20 @@ public class ContaBanco
 
     }
 
+    public float sald()
+    {
+        return this.saldo;
+    }
+
+    public Boolean stat()
+    {
+        return this.status;
+    }
+
     public String toString()
     {
-        return "\n" + "-- Banco Lehinho --" + "\n" +
+
+        return "---------------------------"+ "\n" + "Informações do Cliente " + "\n" +
 
             "\nConta:         "+ this.nConta + "\n" +
             "Dono:          "+ this.nomeDono + "\n" +

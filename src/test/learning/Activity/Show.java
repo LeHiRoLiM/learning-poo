@@ -8,13 +8,29 @@ public class Show
 
     public static void main(String[] args)
     {
+        ContaBanco c2 = new ContaBanco("Lys Rolim", 'c');
         ContaBanco c1 = new ContaBanco("Lys Rolim", 'c');
-
-        System.out.println("-- Bem-vindo ao Banco Lehinho -- \n" + "O que deseja ?");
-        System.out.println("");
+        ContaBanco c3 = new ContaBanco("Lys Rolim", 'c');
+        System.out.println("\n-- Bem-vindo ao Banco Tycoon -- \n" +"\n" + "O que deseja ?\n" +"[DIGITE]"+"\n");
+        System.out.println("[1]  Saldo\n" + "[2]  Status\n" + "[3]  Todas as inforações");
+        System.out.print("x ");
         Scanner fe = new Scanner(System.in);
         int fec = fe.nextInt();
-        System.out.println(c1.toString());
 
+        if (fec == 1)
+        {
+            System.out.println("-------------------------");
+            System.out.println("Seu Saldo é: " + c1.sald());
+            System.out.println("-------------------------");
+        }
+        if ( fec ==2) {
+            System.out.println("-------------------------");
+            System.out.println("Seu Status é : " + c2.stat());
+            System.out.println("-------------------------");
+        }
+        if (fec == 3)
+        {
+            System.out.println(c3.toString());
+        }
     }
 }
