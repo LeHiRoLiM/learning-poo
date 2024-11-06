@@ -7,6 +7,8 @@ public class ContaBanco
     private String nomeDono;
     private float saldo;
     private Boolean status;
+    private int depositar;
+    private int sacar;
 
 
     public ContaBanco(String _nome, char _tipo)
@@ -15,6 +17,8 @@ public class ContaBanco
         this.nomeDono = _nome;
         this.tipo = _tipo;
         this.status = true;
+        this.depositar = 0;
+        this.sacar = 3;
 
         switch (tipo)
         {
@@ -27,17 +31,28 @@ public class ContaBanco
             default:
                 throw new RuntimeException("Error: Os tipos validos sao 'c' e 'p'.");
         }
+        if (this.depositar > 0)
+        {
+            this.saldo += this.depositar;
+        }
+        if (this.sacar <= saldo)
+        {
+            this.saldo -= this.sacar;
+        }
+
     }
 
     public String toString()
     {
-        return "\n" + "-- Banco Lehinho --" +
+        return "\n" + "-- Banco Lehinho --" + "\n" +
 
-            "conta:  " + this.nConta + "\n" +
-            "dono:   " + this.nomeDono + "\n" +
-            "tipo:   " + this.tipo + "\n" +
-            "saldo:  " + this.saldo + "\n" +
-            "status: " + this.status;
+            "\nConta:         "+ this.nConta + "\n" +
+            "Dono:          "+ this.nomeDono + "\n" +
+            "Tipo:          "+ this.tipo + "\n" +
+            "Status:        "+ this.status + "\n" +
+            "Despositado:   R$"+ this.depositar + "\n" +
+            "Sacado:        R$"+ this.sacar + "\n" +
+            "Saldo Total:   R$"+ this.saldo;
     }
 }
 
