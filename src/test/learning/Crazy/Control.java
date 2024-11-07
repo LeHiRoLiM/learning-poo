@@ -4,13 +4,19 @@ import java.util.Scanner;
 
 public class Control implements Implement
 {
+    private int nconta;
     private String nomeDono;
-    private float saldo;
+    private char tipo;
+    private float depositar;
+    private float sacar;
     private Boolean status;
+    private float saldo;
 
-    public Control()
+    public Control(String _dono, char _tipo)
     {
-        this.nomeDono = "Lehi Rolim";
+        this.nconta = (Show.uconta + 1);
+        this.nomeDono = _dono;
+        this.tipo = _tipo;
         this.saldo = 50;
         this.status = true;
     }
@@ -44,7 +50,6 @@ public class Control implements Implement
     {
         this.status = result;
     }
-
 
     @Override
     public void mostrar()
