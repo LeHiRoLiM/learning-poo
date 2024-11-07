@@ -25,7 +25,8 @@ public class Show
         }
         if ( fec ==2) {
             System.out.println("-------------------------");
-            System.out.println("Seu Status é : " + c2.stat());
+            System.out.println("Status : " + c2.stat());
+            System.out.println("Sua conta está Aberta. ");
             System.out.println("-------------------------");
         }
         if (fec == 3)

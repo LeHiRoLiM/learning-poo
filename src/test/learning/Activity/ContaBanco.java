@@ -17,8 +17,8 @@ public class ContaBanco
         this.nomeDono = _nome;
         this.tipo = _tipo;
         this.status = true;
-        this.depositar = 0;
-        this.sacar = 3;
+        this.depositar = 5;
+        this.sacar = 0;
 
         switch (tipo)
         {
