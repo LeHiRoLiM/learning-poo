@@ -1,5 +1,7 @@
 package Crazy;
 
+import java.util.Scanner;
+
 public class Control implements Implement
 {
     private String nomeDono;
@@ -47,6 +49,12 @@ public class Control implements Implement
     @Override
     public void mostrar()
     {
-        System.out.println(" Se aparecer Tõ feliz !");
+        System.out.println("\n-- Bem-vindo ao Banco Tycoon -- \n" +"\n" + "O que deseja ?\n" +"[DIGITE]"+"\n");
+        System.out.println("[1]  Saldo\n" + "[2]  Status\n" + "[3]  Todas as inforações");
+        System.out.print("x ");
+        Scanner wi = new Scanner(System.in);
+        int wish = wi.nextInt();
+
+
     }
 }
