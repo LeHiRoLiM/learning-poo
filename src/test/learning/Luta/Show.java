@@ -9,5 +9,7 @@ public class Show
         lutadors[1] = new Lutador("Gabriel","Argentina",20,1.70f,62.6f,1,5,3);
         lutadors[1].apresentar();
         lutadors[1].status();
+
+
     }
 }
