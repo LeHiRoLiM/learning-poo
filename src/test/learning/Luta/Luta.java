@@ -52,14 +52,11 @@ public class Luta
                     this.desafiante.ganharLuta();
                     this.desafiado.perderLuta();
                     break;
-
-
             }
 
         } else {
-            System.out.println("A luta não pode acontecer !");
+            System.out.println("\nA luta não pode acontecer !");
         }
-
     }
 
     public Lutador getDesafiado()

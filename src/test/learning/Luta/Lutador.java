@@ -22,7 +22,6 @@ public class Lutador
         vitoria = vi;
         derrotas = de;
         empates = em;
-
     }
 
     public String getNome()
