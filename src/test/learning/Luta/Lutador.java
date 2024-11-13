@@ -120,12 +120,15 @@ public class Lutador
     public void ganharLuta() {
         setVitoria(getVitoria() + 1);
     }
+
     public void perderLuta() {
         setDerrotas(getDerrotas() + 1);
     }
+
     public void empatarLuta(){
         setEmpates(getEmpates() + 1);
     }
+
     public void status() {
         System.out.println("\n");
         System.out.println(getNome());
@@ -134,6 +137,7 @@ public class Lutador
         System.out.println(getDerrotas() + " Derrotas");
         System.out.println(getEmpates() + " Empates");
     }
+
     public void apresentar () {
         System.out.println("\nUEFA\n-- Lutador -----");
         System.out.println("Lutador: " + getNome());
