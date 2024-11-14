@@ -37,10 +37,10 @@ public  class Pessoa
 
     @Override
     public String toString() {
-        return "Pessoa {" +
-                " nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", sexo='" + sexo + '\'' +
-                '}';
+        return "\n++ Informações do Aluno ++\n \n{" +
+                " Nome= " + nome + "" +
+                ", Idade= " + idade +
+                ", Sexo= " + sexo + "" +
+                "}";
     }
 }
