@@ -1,4 +1,4 @@
-package Polimorfismo;
+package PolimorfismoSobrecarga;
 
 public class Show
 {
@@ -8,6 +8,9 @@ public class Show
         Reptil r = new Reptil();
         Peixe p = new Peixe();
         Ave a = new Ave();
+        Canguru c = new Canguru();
+
+        c.locomover();
 
     }
 }
