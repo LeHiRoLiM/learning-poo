@@ -12,7 +12,17 @@ public class Show
         Gafanhoto g[] = new Gafanhoto[2];
         g[0] = new Gafanhoto("Lehi", 22, "M", "Ok");
 
-        System.out.printf(v[0].toString());
-        System.out.printf(String.valueOf(g[0]).toString());
+
+        Vizualizacao vi[] = new Vizualizacao[2];
+        vi[0] = new Vizualizacao(g[0], v[2]);
+        System.out.println(vi.toString());
+        vi[1] = new Vizualizacao(g[0], v[1]);
+        System.out.println(vi[0].toString());
+
+          System.out.println("Videos\n-----------------------");
+          System.out.printf(v[0].toString());
+          System.out.println("\nGafanhotos\n----------------- ");
+          System.out.println(g[0].toString());
+
     }
 }
