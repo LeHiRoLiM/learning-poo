@@ -1,6 +1,6 @@
 package PolimorfismoSobreposicao;
 
-public class Ave extends Animal
+public class Ave extends PolimorfismoSobreposicao.Animal
 {
     private String corPena;
 
