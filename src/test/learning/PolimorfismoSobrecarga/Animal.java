@@ -2,41 +2,20 @@ package PolimorfismoSobrecarga;
 
 public abstract class Animal
 {
-    private float peso;
-    private int idade;
-    private int membros;
+    private int numero;
 
-    public abstract void locomover();
-    public abstract void alimentar();
-    public abstract void emitirSom();
-
-    public float getPeso()
+    public void reagir()
     {
-        return peso;
+    System.out.println("conotando");
     }
 
-    public void setPeso(float peso)
-    {
-        this.peso = peso;
+    public int getNumero() {
+        return numero;
     }
 
-    public int getIdade()
-    {
-        return idade;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
-    public void setIdade(int idade)
-    {
-        this.idade = idade;
-    }
-
-    public int getMembros()
-    {
-        return membros;
-    }
-
-    public void setMembros(int membros)
-    {
-        this.membros = membros;
-    }
+    public abstract void reagir(int a);
 }

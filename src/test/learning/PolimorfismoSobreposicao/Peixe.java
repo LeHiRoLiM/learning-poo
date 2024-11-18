@@ -1,4 +1,4 @@
-package PolimorfismoSobrecarga;
+package PolimorfismoSobreposicao;
 
 public class Peixe extends Animal
 {
